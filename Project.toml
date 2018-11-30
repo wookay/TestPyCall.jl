@@ -1,0 +1,8 @@
+authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
+name = "TestPyCall"
+uuid = "02e86c24-f4f5-11e8-3566-a90fe6575916"
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
