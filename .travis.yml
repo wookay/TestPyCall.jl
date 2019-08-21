@@ -2,16 +2,19 @@
 language: julia
 os:
   - linux
+
 julia:
-  - 1.0
+  - 1.2
+
 addons:
   apt:
     packages:
       - python-numpy
       - python3-numpy
+
 notifications:
   email: false
 
 before_script:
-  - julia -e 'using Pkg; pkg"add https://github.com/wookay/Jive.jl.git"'
+  - julia -e 'using Pkg; pkg"dev Jive"'
   - julia -e 'using Pkg; pkg"precompile"'

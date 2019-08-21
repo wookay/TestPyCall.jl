@@ -3,7 +3,10 @@ name = "TestPyCall"
 uuid = "02e86c24-f4f5-11e8-3566-a90fe6575916"
 version = "0.1.0"
 
-[deps]
-PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+[extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-Jive = "6ea17500-d18f-11e8-3cf5-7930f07cb877"
+Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+
+[targets]
+test = ["Test", "Jive", "PyCall"]
